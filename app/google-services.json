@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "910519979017",
+    "firebase_url": "https://smartmed-7c994-default-rtdb.firebaseio.com",
+    "project_id": "smartmed-7c994",
+    "storage_bucket": "smartmed-7c994.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910519979017:android:c2600570a1245ff5693cd8",
+        "android_client_info": {
+          "package_name": "com.example.smartmed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByzmyZfbsIq850Bh6QhLj-Ff8ae9z6T8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910519979017:android:698c5ddb198eaa7b693cd8",
+        "android_client_info": {
+          "package_name": "com.example.smartmedbeta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByzmyZfbsIq850Bh6QhLj-Ff8ae9z6T8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

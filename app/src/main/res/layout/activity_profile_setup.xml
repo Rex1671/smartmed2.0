@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corners"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/profileTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUploadPicture"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Profile Information"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etFullNamelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileTextView"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Full Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmaillay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etFullNamelay"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPhonelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmaillay"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etDOBlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPhonelay"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Date of Birth">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+
+                android:focusable="false"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDOBlay"
+            android:layout_marginTop="8dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etHeightlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerGender"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Height (cm)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etWeightlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etHeightlay"
+            android:layout_marginTop="8dp"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:hint="Weight (kg)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmergencyContactlay"
+            android:layout_width="match_parent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:counterTextColor="@color/colorAccent"
+            app:cursorColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent"
+            app:prefixTextColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etWeightlay"
+            android:layout_marginTop="8dp"
+            android:hint="Emergency Contact">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmergencyContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/colorAccent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmergencyContactlay"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="I accept the terms and conditions"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:id="@+id/btnUploadPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_background_red"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="14dp"
+            android:text="Upload Profile Picture"
+            android:textColor="@color/colorAccent" />
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbTerms"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="#FFFFFF" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/header_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/chatAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/chatTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Ask Anything: Your Health Advisor Awaits"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@drawable/rounded_edittext_livechat"
+            android:orientation="horizontal">
+
+            <TextureView
+                android:id="@+id/textureView"
+                android:layout_width="wrap_content"
+                android:layout_height="430dp"
+
+
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/statusIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/baseline_equalizer_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="6dp"
+            android:background="@drawable/rounded_background_white"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/captureButton"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:insetLeft="12dp"
+                android:insetTop="12dp"
+                android:insetRight="12dp"
+                android:insetBottom="12dp"
+                app:icon="@drawable/baseline_camera_24"
+                app:iconGravity="textStart"
+                app:iconTint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startButton"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:insetLeft="12dp"
+                android:insetTop="12dp"
+                android:insetRight="12dp"
+                android:insetBottom="12dp"
+                android:textColor="@color/colorAccent"
+                app:icon="@drawable/baseline_mic_24"
+                app:iconGravity="textStart"
+                app:iconTint="@android:color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/stopButton"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:insetLeft="12dp"
+                android:insetTop="12dp"
+                android:insetRight="12dp"
+                android:insetBottom="12dp"
+                app:icon="@drawable/baseline_mic_off_24"
+                app:iconGravity="textStart"
+                app:iconTint="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chatLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#f0f0f0"
+            android:maxHeight="300dp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/connectionStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Connected"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

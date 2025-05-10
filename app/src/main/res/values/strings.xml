@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SmartMed</string>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Bengali</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Gujarati</item>
+        <item>Punjabi</item>
+        <item>Urdu</item>
+        <item>Odia</item>
+    </string-array>
+
+</resources>
