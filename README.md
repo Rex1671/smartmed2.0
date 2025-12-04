@@ -57,7 +57,7 @@ SmartMed is a comprehensive AI-powered healthcare assistant application designed
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/smartmed.git
+    git clone https://github.com/Rex1671/smartmed2.0.git
     ```
 
 2.  **Setup Firebase**
